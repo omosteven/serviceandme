@@ -10,7 +10,7 @@ import {Helmet} from "react-helmet";
 
 import {Chrono} from 'react-chrono';
 
-import {Ripple} from "react-preloaders";
+// import {Ripple} from "react-preloaders";
 
 import mobileFirstImage from "../images/Startup_SVG-a7c5e6d7.svg";
 
@@ -70,7 +70,6 @@ const HomeBody = () => {
         },
     ];
     return (
-
         <>
             <div>
                 <Helmet htmlAttributes>
@@ -86,6 +85,7 @@ const HomeBody = () => {
                 </Helmet>
 
                 <div>
+
                     <section className="bodyContainer">
                         <div className="first__layer">
                             <div className="left__side">
@@ -98,8 +98,8 @@ const HomeBody = () => {
                                         {/* ServiceandMe */} </p>
                                     <h4 className="service__describe_page">
                                         An online platform that allows you as a service
-                                                                                provider to render your services (on-demand) to people around
-                                                                                you OR connect with Nearby service providers as customer.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                provider to render your services (on-demand) to people around
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                you OR connect with Nearby service providers as customer.
                                     </h4>
 
                                     <div className="left__side__button__container">
@@ -140,9 +140,9 @@ const HomeBody = () => {
                         <div className="second__layer__container">
                             <h4 className="second__layer__title">About Us</h4>
                             {/* <h6 className="second__layer__title2">
-Start working with Landrick that can provide everything you need
-to generate awareness, drive traffic, connect.
-</h6> */}
+                                Start working with Landrick that can provide everything you need
+                                to generate awareness, drive traffic, connect.
+                                </h6> */}
                             <div className="second__layer__description">
                                 <img src={mobileSecondImage}
                                     alt=""
@@ -154,14 +154,14 @@ to generate awareness, drive traffic, connect.
 
                                     <li className="second__layer__desc__inner">
                                         ServiceandMe is a platform that connects customers with on-demand
-                                                                                businesses around them. On demand businesses are businesses
-                                                                                which deliver their product at your door from anywhere and
-                                                                                anytime
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                businesses around them. On demand businesses are businesses
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                which deliver their product at your door from anywhere and
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                anytime
                                     </li>
                                     <li className="second__layer__desc__inner">
                                         ServiceandMe allows users to render their services as service
-                                                                                provider to people around them and connect with those services
-                                                                                providers as customers.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                provider to people around them and connect with those services
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                providers as customers.
                                     </li>
                                 </div>
                             </div>
@@ -173,9 +173,9 @@ to generate awareness, drive traffic, connect.
                         <div className="__layer__container">
                             <h4 className="second__layer__title">How It Works</h4>
                             {/* <h6 className="second__layer__title2">
-Start working with Landrick that can provide everything you need
-to generate awareness, drive traffic, connect.
-</h6> */}
+                                Start working with Landrick that can provide everything you need
+                                to generate awareness, drive traffic, connect.
+                                </h6> */}
                             <div className="fourth__layer__description">
                                 <Chrono items={data}
                                     mode="VERTICAL_ALTERNATING"
@@ -223,20 +223,11 @@ to generate awareness, drive traffic, connect.
                     </section>
                 </div>
             </div>
-
-        </>
+            {/* <Ripple color={"rgb(0, 68, 102)"}
+                background="white"
+                time={3000}
+                customLoading={false}/> */} </>
     );
 };
 
 export default HomeBody;
-
-// http://www.cs.utsa.edu/~wagner/CS3723/fully/parens.html
-// https://www2.seas.gwu.edu/~simhaweb/cs1112/modules/module10/suppl/index.html
-
-{ /* <Ripple
-color={"rgb(0, 68, 102)"}
-background="white"
-time={3000}
-customLoading={false}
-/> */
-}

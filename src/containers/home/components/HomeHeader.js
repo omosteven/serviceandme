@@ -74,6 +74,7 @@ const HomeHeader = () => {
   };
 
   return (
+    <>
     <div>
       <div className="headerbar">
         <header className={nav__class}>
@@ -170,6 +171,7 @@ const HomeHeader = () => {
         {/* End of Mobile View */}
       </div>
     </div>
+    </>
   );
 };
 
