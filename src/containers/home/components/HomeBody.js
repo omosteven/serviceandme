@@ -4,8 +4,6 @@ import {Link} from "react-router-dom";
 
 import "../styles/homeBody.css";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
 import {Helmet} from "react-helmet";
 
 import {Chrono} from 'react-chrono';
