@@ -2,13 +2,18 @@ import React from "react";
 
 import {Link} from "react-router-dom";
 
+// import {Ripple} from "react-preloaders";
+
 import "../styles/homeBody.css";
 
 import {Helmet} from "react-helmet";
 
 import {Chrono} from 'react-chrono';
 
-// import {Ripple} from "react-preloaders";
+import AOS from "aos";
+
+import "aos/dist/aos.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import mobileFirstImage from "../images/Startup_SVG-a7c5e6d7.svg";
@@ -16,6 +21,8 @@ import mobileFirstImage from "../images/Startup_SVG-a7c5e6d7.svg";
 import mobileSecondImage from "../images/intellectual-b138e111.svg";
 
 const HomeBody = () => {
+    AOS.init();
+
     const data = [
         {
             title: 'Step 0 - As a Customer or Service provider.',
@@ -60,7 +67,10 @@ const HomeBody = () => {
         },
     ];
     return (
-        <>
+        <> {/* <Ripple color={"rgb(0, 68, 72)"}
+                background="white"
+                time={3000}
+                customLoading={false}/> */}
             <div>
                 <Helmet htmlAttributes>
                     <html lang="en"/>
@@ -87,8 +97,8 @@ const HomeBody = () => {
                                     </h2>
                                     <h4 className="service__describe_page">
                                         An online platform that allows you as a service
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            provider to render your services (on-demand) to people around
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            you OR connect with Nearby service providers as customer.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    provider to render your services (on-demand) to people around
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    you OR connect with Nearby service providers as customer.
                                     </h4>
 
                                     <div className="left__side__button__container">
@@ -143,7 +153,7 @@ const HomeBody = () => {
 
                                     <li className="second__layer__desc__inner">
                                         ServiceandMe is a platform that connects customers with on-demand businesses around them. On demand businesses are businesses which deliver their product at your door from anywhere and
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            anytime
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    anytime
                                     </li>
                                     <li className="second__layer__desc__inner">
                                         We allow you to turn your mobile phone to your business office where you can earn by REDERING service OR connect you with service providers.
@@ -261,10 +271,7 @@ const HomeBody = () => {
                     </section>
                 </div>
             </div>
-            {/* <Ripple color={"rgb(0, 68, 102)"}
-                background="white"
-                time={3000}
-                customLoading={false}/> */} </>
+        </>
     );
 };
 
