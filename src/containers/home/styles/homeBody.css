@@ -422,6 +422,7 @@
     height: 22em;
     background-position: center;
     border-right: 1px solid rgba(5, 5, 5, 0.1);
+    background-repeat: no-repeat;
     background-image: url('../images/Mobile_notification_SVG-c7186b93.svg');
 }
 

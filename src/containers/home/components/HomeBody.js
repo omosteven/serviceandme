@@ -1,8 +1,8 @@
 import React from "react";
 
-import {Link} from "react-router-dom";
-
 // import {Ripple} from "react-preloaders";
+
+import {Link} from "react-router-dom";
 
 import "../styles/homeBody.css";
 
@@ -25,12 +25,17 @@ const HomeBody = () => {
 
     const data = [
         {
-            title: 'Step 0 - As a Customer or Service provider.',
+            title: 'Step 1 - As a Service provider.',
             contentText: 'DOWNLOAD APP.',
-            contentDetailedText: 'Get the APP installed from PlayStore or AppStore and set up your account.'
+            contentDetailedText: 'Get the APP installed from PlayStore or AppStore and set up a service provider account.'
         },
         {
-            title: 'Step 1 - As a Service provider.',
+            title: 'Step 1 - As a Customer.',
+            contentText: 'DOWNLOAD APP.',
+            contentDetailedText: 'Get the APP installed from PlayStore or AppStore and set up a customer account.'
+        },
+        {
+            title: 'Step 2 - As a Service provider.',
 
             contentText: 'CHECK YOUR TIMELINE.',
             contentDetailedText: 'Check your timeline to see customers around you that requested for a specific service. You will always receive notifications for new requests.'
@@ -38,18 +43,17 @@ const HomeBody = () => {
         {
             title: 'Step 2 - As a Customer.',
             contentText: 'SEARCH FOR A SERVICE.',
-            contentDetailedText: 'Search for any service and read about the description of which is of your interest.'
-        },
-        {
-            title: 'Step 2 - As a Service provider.',
+            contentDetailedText: 'Search for any service and check ratings/reviews of interested service provider in the search results.'
+        }, {
+            title: 'Step 3 - As a Service provider.',
             contentText: 'CHAT CUSTOMERS.',
             contentDetailedText: 'Chat up customers that request for your service.'
         }, {
             title: 'Step 3 - As a Customer.',
             contentText: 'MAKE A REQUEST.',
-            contentDetailedText: 'Make a request with just a click and get redirected to chat up the service provider.'
+            contentDetailedText: 'Make a request for a service with just a click and interested providers of such service will message you.'
         }, {
-            title: 'Step 3 - As a Service provider.',
+            title: 'Step 4 - As a Service provider.',
             contentText: 'DELIVER & GET PAID.',
             contentDetailedText: 'Deliver your service to your customer as agreed.'
         }, {
@@ -57,15 +61,16 @@ const HomeBody = () => {
             contentText: 'PAY & WAIT FOR DELIVERY.',
             contentDetailedText: 'Make your payment and rate service after delivery.'
         }, {
-            title: 'Step 4 - As a Service provider.',
+            title: 'Step 5 - As a Service provider.',
             contentText: 'POST UPDATES/NEWS.',
             contentDetailedText: 'Post your News & recent updates to your customerss (those that favorite you) Timeline.'
         }, {
-            title: 'Step 4 - As a Customer.',
+            title: 'Step 5 - As a Customer.',
             contentText: 'ADD SERVICE AS FAVORITE.',
             contentDetailedText: 'Add service provider as favourite for ease of subsequent clicks.'
         },
     ];
+
     return (
         <> {/* <Ripple color={"rgb(0, 68, 72)"}
                 background="white"
@@ -84,32 +89,30 @@ const HomeBody = () => {
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
                 </Helmet>
 
-                <div>
+                <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine">
 
-                    <section className="bodyContainer">
+                    <section className="bodyContainer" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
                         <div className="first__layer">
                             <div className="left__side">
                                 <div className="left__side__container">
                                     <h2 className="perfect__place animate--perfect">
-                                        Welcome to {/* <span class="ServiceandMe">ServiceandMe</span> */} </h2>
+                                        Welcome to {/* <span className="ServiceandMe">ServiceandMe</span> */} </h2>
                                     <h2 className="perfect__place animate--perfect">
                                         ServiceandMe
                                     </h2>
                                     <h4 className="service__describe_page">
-                                        An online platform that allows you as a service
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    provider to render your services (on-demand) to people around
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    you OR connect with Nearby service providers as customer.
+                                        An online platform that allows you as a service provider to render your services (on-demand) to people around you OR connect with Nearby service providers as customer.
                                     </h4>
 
                                     <div className="left__side__button__container">
                                         <Link to="/auth/register/" className="left__side__button">
-                                            <i class="fas fa-apple-alt"></i>
+                                            <i className="fas fa-apple-alt"></i>
                                             App Store
                                         </Link>
                                     </div>
                                     <div className="left__side__button__container">
                                         <Link to="/auth/register/" className="left__side__button2">
-                                            <i class="fab fa-google-play"></i>
+                                            <i className="fab fa-google-play"></i>
                                             Play Store
                                         </Link>
                                     </div>
@@ -128,13 +131,13 @@ const HomeBody = () => {
                                 alt=""/>
                         </div>
                         <div className="curve__shape">
-                            <div class="section_wave1"></div>
+                            <div className="section_wave1"></div>
                         </div>
                     </section>
 
                     {/* Start of the Second Layer */}
 
-                    <section className="__layer" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <section className="__layer" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
                         {/* <hr className="layer__rule" /> */}
                         <div className="second__layer__container">
                             <h4 className="second__layer__title">About Us</h4>
@@ -152,18 +155,15 @@ const HomeBody = () => {
                                     </h5>
 
                                     <li className="second__layer__desc__inner">
-                                        ServiceandMe is a platform that connects customers with on-demand businesses around them. On demand businesses are businesses which deliver their product at your door from anywhere and
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    anytime
+                                        ServiceandMe is a an application that connects you with on-demand service provider to get your work done.
                                     </li>
-                                    <li className="second__layer__desc__inner">
-                                        We allow you to turn your mobile phone to your business office where you can earn by REDERING service OR connect you with service providers.
-                                    </li>
+                                    <li className="second__layer__desc__inner">It offers users the convenience to find/request for different categories of services on their mobile devices and also allow service providers to turn their smartphones to business office where they can render their services and get paid.</li>
                                 </div>
                             </div>
                         </div>
                     </section>
                     {/*  */}
-                    <section className="__layer" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <section className="__layer" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
                         {/* <hr className="layer__rule" /> */}
                         <div className="__layer__container cardContWidth">
                             <h4 className="second__layer__title">Why ServiceandMe?</h4>
@@ -174,22 +174,22 @@ const HomeBody = () => {
                                         <h6 className="whyCardTitle">As a Service provider</h6>
                                         <div className="why--card">
                                             <h6 className="whyItem">
-                                                <i class="fa fa-money whyIcon" aria-hidden="true"></i>
+                                                <i className="fa fa-money whyIcon" aria-hidden="true"></i>
                                                 Make Money When Delivering Services.</h6>
                                         </div>
                                         <div className="why--card">
                                             <h6 className="whyItem">
-                                                <i class="fa fa-save whyIcon" aria-hidden="true"></i>
+                                                <i className="fa fa-save whyIcon" aria-hidden="true"></i>
                                                 Save Money From Developing A Dedicated Website For Your Business.</h6>
                                         </div>
                                         <div className="why--card">
                                             <h6 className="whyItem">
-                                                <i class="fa fa-expand whyIcon" aria-hidden="true"></i>
-                                                Gain more customers.</h6>
+                                                <i className="fa fa-expand whyIcon" aria-hidden="true"></i>
+                                                Gain more customers and engage/retain existing customers.</h6>
                                         </div>
                                         <div className="why--card">
                                             <h6 className="whyItem">
-                                                <i class="fa fa-credit-card whyIcon" aria-hidden="true"></i>
+                                                <i className="fa fa-credit-card whyIcon" aria-hidden="true"></i>
                                                 Accept payment directly from your customer on the app.</h6>
                                         </div>
                                     </div>
@@ -197,17 +197,17 @@ const HomeBody = () => {
                                         <h6 className="whyCardTitle">As a Customer.</h6>
                                         <div className="why--card">
                                             <h6 className="whyItem">
-                                                <i class="fa fa-save whyIcon" aria-hidden="true"></i>
-                                                Save stress; you can locate your business with a click.</h6>
+                                                <i className="fa fa-save whyIcon" aria-hidden="true"></i>
+                                                Save stress; Find/Request for a service with a click.</h6>
                                         </div>
                                         <div className="why--card">
                                             <h6 className="whyItem">
-                                                <i class="fa fa-link whyIcon" aria-hidden="true"></i>
+                                                <i className="fa fa-link whyIcon" aria-hidden="true"></i>
                                                 Stay connected; you can receive News/trends/promo from your favorite service providers.</h6>
                                         </div>
                                         <div className="why--card">
                                             <h6 className="whyItem">
-                                                <i class="fa fa-credit-card whyIcon" aria-hidden="true"></i>
+                                                <i className="fa fa-credit-card whyIcon" aria-hidden="true"></i>
                                                 Pay on the go; you can pay for service delivered on the app using your bank card.</h6>
                                         </div>
                                     </div>
@@ -216,7 +216,7 @@ const HomeBody = () => {
                         </div>
                     </section>
                     {/* Third layer */}
-                    <section className="__layer" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <section className="__layer" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
                         {/* <hr className="layer__rule" /> */}
                         <div className="__layer__container">
                             <h4 className="second__layer__title">How It Works</h4>
@@ -238,7 +238,7 @@ const HomeBody = () => {
                         </div>
                     </section>
 
-                    <section className="__layer" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <section className="__layer" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
                         {/* <hr className="layer__rule" /> */}
                         <div className="__layer__container">
                             <h4 className="second__layer__title">Feedback</h4>

@@ -5,11 +5,11 @@ import HomeFooter from "./components/HomeFooter";
 
 const Home = () => {
     return (
-        <div>
+        <>
             <HomeHeader/>
             <HomeBody/>
             <HomeFooter/>
-        </div>
+        </>
     );
 };
 
