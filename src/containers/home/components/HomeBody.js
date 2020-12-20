@@ -63,7 +63,7 @@ const HomeBody = () => {
         }, {
             title: 'Step 5 - As a Service provider.',
             contentText: 'POST UPDATES/NEWS.',
-            contentDetailedText: 'Post your News & recent updates to your customerss (those that favorite you) Timeline.'
+            contentDetailedText: 'Post your News & recent updates to your customers (those that favorite you) Timeline.'
         }, {
             title: 'Step 5 - As a Customer.',
             contentText: 'ADD SERVICE AS FAVORITE.',
@@ -155,7 +155,7 @@ const HomeBody = () => {
                                     </h5>
 
                                     <li className="second__layer__desc__inner">
-                                        ServiceandMe is a an application that connects you with on-demand service provider to get your work done.
+                                        ServiceandMe is an application that connects you with on-demand service provider to get your work done.
                                     </li>
                                     <li className="second__layer__desc__inner">It offers users the convenience to find/request for different categories of services on their mobile devices and also allow service providers to turn their smartphones to business office where they can render their services and get paid.</li>
                                 </div>
