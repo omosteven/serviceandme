@@ -101,7 +101,7 @@ const HomeBody = () => {
                                         ServiceandMe
                                     </h2>
                                     <h4 className="service__describe_page">
-                                        An online platform that allows you as a service provider to render your services (on-demand) to people around you OR connect with Nearby service providers as customer.
+                                        Serviceandme is a mobile application which connects independent contractors with people who need one-time services.
                                     </h4>
 
                                     <div className="left__side__button__container">
