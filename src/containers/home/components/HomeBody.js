@@ -192,6 +192,11 @@ const HomeBody = () => {
                                                 <i className="fa fa-credit-card whyIcon" aria-hidden="true"></i>
                                                 Accept payment directly from your customer on the app.</h6>
                                         </div>
+                                         <div className="why--card">
+                                            <h6 className="whyItem">
+                                                <i className="fa fa-line-chart whyIcon" aria-hidden="true"></i>
+                                               Get sales analytics and make schedules.</h6>
+                                        </div>
                                     </div>
                                     <div className="col-sm-12 col-lg-6 col-xl-6 col-md-6 cardCont">
                                         <h6 className="whyCardTitle">As a Customer.</h6>
@@ -209,6 +214,12 @@ const HomeBody = () => {
                                             <h6 className="whyItem">
                                                 <i className="fa fa-credit-card whyIcon" aria-hidden="true"></i>
                                                 Pay on the go; you can pay for service delivered on the app using your bank card.</h6>
+                                        </div>
+                                        <div className="why--card">
+                                            <h6 className="whyItem">
+                                                <i className="fas fa-greater-than whyIcon" aria-hidden="true"></i>
+                                               Compare prices across different service providers.
+                                               </h6>
                                         </div>
                                     </div>
                                 </div>

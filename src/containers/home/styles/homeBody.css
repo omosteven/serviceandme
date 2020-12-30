@@ -580,7 +580,8 @@
     -o-transition: transform 0.5s, background 0.5s, color 0.5s;
 }
 
-.why--card:hover {
+.why--card:hover,
+.whyIcon:hover {
     background-color: rgb(0, 68, 102);
     color: white;
     transform: scale(1.03);
@@ -615,5 +616,5 @@
 
 .whyIcon {
     margin-right: 0.5em;
-    color: rgb(0, 68, 102);
+    /* color: rgb(0, 68, 102); */
 }
