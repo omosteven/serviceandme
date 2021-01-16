@@ -316,11 +316,11 @@
 }
 
 .second__layer__description {
-    color: rgba(5, 5, 5, 0.5);
+    color: rgba(5, 5, 5, 0.9);
     width: 90%;
     margin-left: 5%;
     display: flex;
-    font-weight: 550;
+    /* font-weight: 550; */
     text-align: justify;
 }
 
@@ -445,6 +445,7 @@
 .contact__input {
     height: 3em;
     width: 100%;
+    outline: none;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;

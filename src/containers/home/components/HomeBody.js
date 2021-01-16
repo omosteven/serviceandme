@@ -177,26 +177,26 @@ const HomeBody = () => {
                                                 <i className="fa fa-money whyIcon" aria-hidden="true"></i>
                                                 Make Money When Delivering Services.</h6>
                                         </div>
-                                        <div className="why--card">
+                                        {/* <div className="why--card">
                                             <h6 className="whyItem">
                                                 <i className="fa fa-save whyIcon" aria-hidden="true"></i>
                                                 Save Money From Developing A Dedicated Website For Your Business.</h6>
-                                        </div>
+                                        </div> */}
                                         <div className="why--card">
                                             <h6 className="whyItem">
                                                 <i className="fa fa-expand whyIcon" aria-hidden="true"></i>
-                                                Gain more customers and engage/retain existing customers.</h6>
+                                                Gain more customers, engage/retain existing customers, and get sales analytics</h6>
                                         </div>
                                         <div className="why--card">
                                             <h6 className="whyItem">
                                                 <i className="fa fa-credit-card whyIcon" aria-hidden="true"></i>
                                                 Accept payment directly from your customer on the app.</h6>
                                         </div>
-                                         <div className="why--card">
+                                         {/* <div className="why--card">
                                             <h6 className="whyItem">
                                                 <i className="fa fa-line-chart whyIcon" aria-hidden="true"></i>
                                                Get sales analytics and make schedules.</h6>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="col-sm-12 col-lg-6 col-xl-6 col-md-6 cardCont">
                                         <h6 className="whyCardTitle">As a Customer.</h6>
@@ -205,11 +205,11 @@ const HomeBody = () => {
                                                 <i className="fa fa-save whyIcon" aria-hidden="true"></i>
                                                 Save stress; Find/Request for a service with a click.</h6>
                                         </div>
-                                        <div className="why--card">
+                                        {/* <div className="why--card">
                                             <h6 className="whyItem">
                                                 <i className="fa fa-link whyIcon" aria-hidden="true"></i>
                                                 Stay connected; you can receive News/trends/promo from your favorite service providers.</h6>
-                                        </div>
+                                        </div> */}
                                         <div className="why--card">
                                             <h6 className="whyItem">
                                                 <i className="fa fa-credit-card whyIcon" aria-hidden="true"></i>
@@ -228,13 +228,9 @@ const HomeBody = () => {
                     </section>
                     {/* Third layer */}
                     <section className="__layer" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                        {/* <hr className="layer__rule" /> */}
                         <div className="__layer__container">
                             <h4 className="second__layer__title">How It Works</h4>
-                            {/* <h6 className="second__layer__title2">
-                                Start working with Landrick that can provide everything you need
-                                to generate awareness, drive traffic, connect.
-                                </h6> */}
+                           
                             <div className="fourth__layer__description">
                                 <Chrono items={data}
                                     mode="VERTICAL_ALTERNATING"
